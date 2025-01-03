@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "GitHub Helper",
+    "version": "1.0",
+    "description": "GitHubを便利にする拡張機能",
+    "permissions": [
+      "scripting",
+      "tabs",
+      "activeTab"
+    ],
+    "host_permissions": [
+      "https://github.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://github.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    }
+  }
+  
